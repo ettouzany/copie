@@ -1,24 +1,20 @@
 // Font Family
-$karla: "Karla", sans-serif;
+$karla: "Karla",
+sans-serif;
 $gilroy: "GilroyBold";
-
 // Colors
 $text-color: #616161;
 $text-color-2: #81a3bb;
 $text-color-3: #69a1bb;
 $border-color: #e3eeff;
 $border-color-2: #ededed;
-
 $white: #fff;
 $black: #232323;
 $grey: #f7f7fd;
 $primary-color: #0c59db;
 $secondary-color: #002249;
-
 $secondary-soft: #4f79a9;
-
 $soft-blue: #f5faff;
-
 // A map of breakpoints.
 $breakpoints: (
     xs: 0,
@@ -35,12 +31,10 @@ $breakpoints: (
     @if map-has-key($breakpoints, $breakpoint) {
         // Get the breakpoint value.
         $breakpoint-value: map-get($breakpoints, $breakpoint);
-
         // Write the media query.
         @media (min-width: $breakpoint-value) {
             @content;
         }
-
         // If the breakpoint doesn't exist in the map.
     } @else {
         // Log a warning.
@@ -54,14 +48,13 @@ $breakpoints: (
     @if map-has-key($breakpoints, $breakpoint) {
         // Get the breakpoint value.
         $breakpoint-value: map-get($breakpoints, $breakpoint);
-
         // Write the media query.
         @media (max-width: ($breakpoint-value - 1)) {
             @content;
         }
-
         // If the breakpoint doesn't exist in the map.
-    } @else {
+    }
+    @else {
         // Log a warning.
         @warn 'Invalid breakpoint: #{$breakpoint}.';
     }
@@ -70,27 +63,24 @@ $breakpoints: (
 // Respond Between
 @mixin respond-between($lower, $upper) {
     // If both the lower and upper breakpoints exist in the map.
-    @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper)
-    {
+    @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
         // Get the lower and upper breakpoints.
         $lower-breakpoint: map-get($breakpoints, $lower);
         $upper-breakpoint: map-get($breakpoints, $upper);
-
         // Write the media query.
         @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
             @content;
         }
-
         // If one or both of the breakpoints don't exist.
-    } @else {
+    }
+    @else {
         // If lower breakpoint is invalid.
-        @if (map-has-key($breakpoints, $lower) ==false) {
+        @if (map-has-key($breakpoints, $lower)==false) {
             // Log a warning.
             @warn 'Your lower breakpoint was invalid: #{$lower}.';
         }
-
         // If upper breakpoint is invalid.
-        @if (map-has-key($breakpoints, $upper) ==false) {
+        @if (map-has-key($breakpoints, $upper)==false) {
             // Log a warning.
             @warn 'Your upper breakpoint was invalid: #{$upper}.';
         }
@@ -114,7 +104,7 @@ $breakpoints: (
 
 @mixin animation($value) {
     -webkit-animation: $value;
-       -moz-animation: $value;
-         -o-animation: $value;
-            animation: $value;
-  }
+    -moz-animation: $value;
+    -o-animation: $value;
+    animation: $value;
+}
