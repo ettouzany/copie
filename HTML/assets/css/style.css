@@ -192,7 +192,8 @@ input[type=search]::-webkit-search-results-decoration {
   display: none;
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
   height: auto;
   width: auto;
 }
@@ -239,7 +240,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 .section-gap-top {
-  padding-top: 120px;
+  padding-top: 28px;
 }
 
 .section-gap-bottom {
@@ -4497,6 +4498,12 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 }
 .team-member .member-photo img {
   border-radius: 5px;
+}
+.team-member .member-photo .img {
+  background-position: center;
+  background-size: cover;
+  height: 212px;
+  width: 100%;
 }
 .team-member .member-photo .social-icon {
   position: absolute;

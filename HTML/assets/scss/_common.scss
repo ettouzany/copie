@@ -1,14 +1,10 @@
 /*=======  COMMON CSS  =======*/
-@import url("https://fonts.googleapis.com/css?family=Karla:400,400i,600,700,700i&display=swap");
 
+@import url("https://fonts.googleapis.com/css?family=Karla:400,400i,600,700,700i&display=swap");
 @font-face {
     font-family: "GilroyBold";
     src: url("../fonts/GilroyBold.eot");
-    src: url("../fonts/GilroyBold.eot") format("embedded-opentype"),
-        url("../fonts/GilroyBold.woff2") format("woff2"),
-        url("../fonts/GilroyBold.woff") format("woff"),
-        url("../fonts/GilroyBold.ttf") format("truetype"),
-        url("../fonts/GilroyBold.svg#GilroyBold") format("svg");
+    src: url("../fonts/GilroyBold.eot") format("embedded-opentype"), url("../fonts/GilroyBold.woff2") format("woff2"), url("../fonts/GilroyBold.woff") format("woff"), url("../fonts/GilroyBold.ttf") format("truetype"), url("../fonts/GilroyBold.svg#GilroyBold") format("svg");
 }
 
 body {
@@ -90,15 +86,12 @@ ol {
 
 p {
     margin: 0px;
-
     &.text-color-2 {
         color: $text-color-2;
     }
-
     &.text-color-3 {
         color: $text-color-3;
     }
-
     &.fs-16 {
         font-size: 16px;
     }
@@ -110,7 +103,9 @@ a {
     text-decoration: none;
 }
 
+
 /*======= Input Styles =======*/
+
 input,
 textarea,
 select {
@@ -153,20 +148,19 @@ input[type="search"]::-webkit-search-results-decoration {
     display: none;
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
     height: auto;
     width: auto;
 }
 
 .input-group {
     position: relative;
-
     input,
     textarea,
     select {
         padding-right: 40px;
     }
-
     .icon {
         position: absolute;
         right: 30px;
@@ -176,7 +170,6 @@ input[type=checkbox], input[type=radio] {
         color: $text-color-2;
         line-height: 1;
     }
-
     &.textarea-group {
         .icon {
             transform: translateY(0);
@@ -185,7 +178,9 @@ input[type=checkbox], input[type=radio] {
     }
 }
 
+
 /*======= Common Class =======*/
+
 .container-1470 {
     @include respond-above(xxl) {
         max-width: 1470px;
@@ -207,7 +202,7 @@ input[type=checkbox], input[type=radio] {
 }
 
 .section-gap-top {
-    padding-top: 120px;
+    padding-top: 28px;
 }
 
 .section-gap-bottom {
@@ -225,29 +220,24 @@ input[type=checkbox], input[type=radio] {
         position: relative;
         letter-spacing: 2px;
     }
-
     .title {
         font-size: 60px;
         font-weight: 700;
         position: relative;
-
-        @include respond-between(lg, xl) {
+        @include respond-between(lg,
+        xl) {
             font-size: 42px;
         }
-
         @include respond-below(lg) {
             font-size: 46px;
         }
-
         @include respond-below(md) {
             font-size: 40px;
         }
-
         @include respond-below(sm) {
             font-size: 26px;
         }
     }
-
     &.white-color {
         .title-tag,
         .title,
@@ -255,19 +245,16 @@ input[type=checkbox], input[type=radio] {
             color: $white;
         }
     }
-
     &.with-right-border {
         .title-tag {
             text-transform: capitalize;
             letter-spacing: 0;
             padding-right: 100px;
             position: relative;
-
             @include respond-below(sm) {
                 padding-right: 0;
                 padding-top: 10px;
             }
-
             &::before {
                 position: absolute;
                 content: "";
@@ -277,7 +264,6 @@ input[type=checkbox], input[type=radio] {
                 width: 70px;
                 background: $primary-color;
                 transform: translateY(-50%);
-
                 @include respond-below(sm) {
                     top: 0;
                     transform: translateY(0);
@@ -293,7 +279,6 @@ input[type=checkbox], input[type=radio] {
 .section-title-two {
     position: relative;
     z-index: 2;
-
     .title-tag {
         color: $primary-color;
         font-size: 16px;
@@ -301,25 +286,21 @@ input[type=checkbox], input[type=radio] {
         font-weight: 700;
         padding-bottom: 5px;
     }
-
     .title {
         font-size: 70px;
         font-weight: 700;
         text-transform: capitalize;
-
-        @include respond-between(lg, xl) {
+        @include respond-between(lg,
+        xl) {
             font-size: 54px;
         }
-
         @include respond-below(lg) {
             font-size: 46px;
         }
-
         @include respond-below(sm) {
             font-size: 28px;
         }
     }
-
     .big-text {
         position: absolute;
         font-size: 180px;
@@ -330,34 +311,29 @@ input[type=checkbox], input[type=radio] {
         color: #f5f6f8;
         z-index: -1;
         line-height: 1;
-
-        @include respond-between(lg, xl) {
+        @include respond-between(lg,
+        xl) {
             font-size: 140px;
         }
-
         @include respond-below(lg) {
             font-size: 120px;
         }
-
         @include respond-below(sm) {
             font-size: 100px;
         }
     }
-
     &.text-center {
         .big-text {
             left: 50%;
             transform: translateX(-50%);
         }
     }
-
     &.text-right {
         .big-text {
             left: auto;
             right: 0;
         }
     }
-
     &.white-color {
         .title-tag,
         .title {
@@ -394,7 +370,6 @@ input[type=checkbox], input[type=radio] {
     position: relative;
     z-index: 1;
     border: none;
-
     &::before {
         content: "";
         position: absolute;
@@ -408,64 +383,52 @@ input[type=checkbox], input[type=radio] {
         opacity: 0;
         visibility: hidden;
     }
-
     &:hover {
         color: $white;
-
         &::before {
             width: 100%;
             opacity: 1;
             visibility: visible;
         }
     }
-
     i {
         margin-right: 5px;
         position: relative;
         top: 2px;
     }
-
     &.main-btn-2 {
         background-color: #b7c3d6;
     }
-
     &.main-btn-3 {
         background-color: $white;
         color: $primary-color;
-
         &:hover {
             color: $white;
         }
     }
-
     &.small-size {
         padding: 22px 40px;
         font-size: 15px;
     }
-
     &.icon-right {
         i {
             margin-right: 0;
             margin-left: 5px;
         }
     }
-
     &.rounded-btn {
         &,
         &::before {
             border-radius: 5px;
         }
     }
-
     &.transparent-border-btn {
         background-color: transparent;
         color: $white;
         border: 2px solid rgba($white, 0.2);
-
         &::before {
             background-color: $primary-color;
         }
-
         &:hover {
             border-color: $primary-color;
         }
@@ -476,11 +439,9 @@ input[type=checkbox], input[type=radio] {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     li {
         margin: 0 5px;
     }
-
     a {
         border-radius: 50%;
         height: 50px;
@@ -492,18 +453,15 @@ input[type=checkbox], input[type=radio] {
         font-size: 14px;
         font-weight: 700;
         background-color: $white;
-
         &.active,
         &:hover {
             background-color: $primary-color;
             color: $white;
         }
     }
-
     &.blog-pagination {
         a {
             background-color: $soft-blue;
-
             &.active,
             &:hover {
                 background-color: $primary-color;
@@ -518,7 +476,9 @@ input[type=checkbox], input[type=radio] {
     background-position: center;
 }
 
+
 /*======= Preloader =======*/
+
 div#preloader {
     margin: auto;
     position: fixed;
@@ -529,7 +489,6 @@ div#preloader {
     display: flex;
     align-content: center;
     justify-content: center;
-
     .loader-cubes {
         top: 50%;
         left: 50%;
@@ -539,14 +498,12 @@ div#preloader {
         height: 50px;
         position: absolute;
         transform: rotateZ(45deg);
-
         .loader-cube {
             float: left;
             width: 50%;
             height: 50%;
             position: relative;
             transform: scale(1.1);
-
             &::before {
                 content: "";
                 position: absolute;
@@ -558,26 +515,20 @@ div#preloader {
                 transform-origin: 100% 100%;
                 background: $primary-color;
             }
-
             &.loader-cube2 {
                 transform: scale(1.1) rotateZ(90deg);
-
                 &::before {
                     animation-delay: 0.3s;
                 }
             }
-
             .loader-cube4 {
                 transform: scale(1.1) rotateZ(270deg);
-
                 &::before {
                     animation-delay: 0.9s;
                 }
             }
-
             .loader-cube3 {
                 transform: scale(1.1) rotateZ(180deg);
-
                 &::before {
                     animation-delay: 0.6s;
                 }
@@ -586,7 +537,9 @@ div#preloader {
     }
 }
 
+
 /*=======  Margin Top =======*/
+
 .mt-10 {
     margin-top: 10px;
 }
@@ -663,7 +616,9 @@ div#preloader {
     margin-top: 100px;
 }
 
+
 /*=======  Margin Bottom =======*/
+
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -740,7 +695,9 @@ div#preloader {
     margin-bottom: 100px;
 }
 
+
 /*=======  Padding Top =======*/
+
 .pt-10 {
     padding-top: 10px;
 }
@@ -817,7 +774,9 @@ div#preloader {
     padding-top: 100px;
 }
 
+
 /*=======  Padding Bottom =======*/
+
 .pb-10 {
     padding-bottom: 10px;
 }
@@ -1008,12 +967,13 @@ div#preloader {
     }
 }
 
+
 /*=======  Animations  =======*/
+
 @keyframes sticky {
     0% {
         top: -200px;
     }
-
     100% {
         top: 0;
     }
@@ -1031,13 +991,11 @@ div#preloader {
         transform: perspective(140px) rotateX(-180deg);
         opacity: 0;
     }
-
     25%,
     75% {
         transform: perspective(140px) rotateX(0);
         opacity: 1;
     }
-
     100%,
     90% {
         transform: perspective(140px) rotateY(180deg);
@@ -1050,7 +1008,6 @@ div#preloader {
         transform: scale(1);
         opacity: 1;
     }
-
     100% {
         transform: scale(1.5);
         opacity: 0;
@@ -1062,7 +1019,6 @@ div#preloader {
         transform: scale(1);
         opacity: 1;
     }
-
     100% {
         transform: scale(2);
         opacity: 0;
