@@ -11,20 +11,12 @@ $border-color-2: #ededed;
 $white: #fff;
 $black: #232323;
 $grey: #f7f7fd;
-$primary-color: #0c59db;
+$primary-color: #00467a;
 $secondary-color: #002249;
 $secondary-soft: #4f79a9;
 $soft-blue: #f5faff;
 // A map of breakpoints.
-$breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px,
-);
-
+$breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px, );
 // Respond above.
 @mixin respond-above($breakpoint) {
     // If the breakpoint exists in the map.
@@ -36,7 +28,8 @@ $breakpoints: (
             @content;
         }
         // If the breakpoint doesn't exist in the map.
-    } @else {
+    }
+    @else {
         // Log a warning.
         @warn 'Invalid breakpoint: #{$breakpoint}.';
     }

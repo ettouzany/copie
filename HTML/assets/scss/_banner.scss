@@ -6,7 +6,7 @@
         .title-tag {
             color: $secondary-color;
             font-size: 24px;
-            font-weight: 700;
+            font-weight: 500;
             text-transform: capitalize;
             letter-spacing: 2px;
             padding-bottom: 10px;
@@ -32,7 +32,7 @@
             }
         }
         p {
-            font-weight: 700;
+            font-weight: 500;
             font-size: 19px;
             color: $secondary-color;
             padding-right: 30px;
@@ -288,7 +288,7 @@
                 a {
                     font-size: 24px;
                     color: $black;
-                    font-weight: 700;
+                    font-weight: 500;
                     @include respond-below(xl) {
                         font-size: 20px;
                     }

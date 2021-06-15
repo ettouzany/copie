@@ -499,7 +499,7 @@
                     $this.easyPieChart({
                         size: '230',
                         trackColor: '#f1f9ff',
-                        barColor: '#0c59db',
+                        barColor: '#00467a',
                         lineWidth: 10,
                         scaleLength: 0
                     });

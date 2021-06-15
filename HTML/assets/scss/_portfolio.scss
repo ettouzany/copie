@@ -1,9 +1,9 @@
 /*=======  Portfolio  =======*/
+
 .portfolio-area {
     &.portfolio-area-shape {
         position: relative;
         z-index: 1;
-
         &::before {
             content: "";
             position: absolute;
@@ -22,7 +22,6 @@
 .portfolio-item {
     position: relative;
     z-index: 1;
-
     &::before {
         content: "";
         position: absolute;
@@ -30,22 +29,16 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(
-            rgba(16, 16, 40, 0) 0%,
-            #101028 37%,
-            #101028 100%
-        );
+        background: linear-gradient( rgba(16, 16, 40, 0) 0%, #101028 37%, #101028 100%);
         @include transition(0.3s);
         opacity: 0;
         visibility: hidden;
     }
-
     .portfolio-img {
         img {
             width: 100%;
         }
     }
-
     .portfolio-content {
         position: absolute;
         left: 50px;
@@ -55,39 +48,32 @@
         @include transition(0.3s);
         opacity: 0;
         visibility: hidden;
-
         @include respond-between(lg, xl) {
             left: 30px;
             right: 30px;
             bottom: 30px;
         }
-
         @include respond-below(md) {
             left: 30px;
             right: 30px;
             bottom: 30px;
         }
-
         .category {
             color: $white;
-            font-weight: 700;
+            font-weight: 500;
         }
-
         .title {
             font-size: 26px;
             color: $white;
             line-height: 36px;
-
             @include respond-between(lg, xl) {
                 font-size: 22px;
             }
-
             @include respond-below(md) {
                 font-size: 22px;
             }
         }
     }
-
     .portfolio-link {
         position: absolute;
         right: -50px;
@@ -99,7 +85,6 @@
         width: 60px;
         text-align: center;
         line-height: 62px;
-
         @include respond-between(lg, xl) {
             bottom: -30px;
             right: -30px;
@@ -107,7 +92,6 @@
             width: 50px;
             line-height: 52px;
         }
-
         @include respond-below(md) {
             bottom: -30px;
             right: -30px;
@@ -116,13 +100,11 @@
             line-height: 52px;
         }
     }
-
     &:hover {
         &::before {
             opacity: 0.8;
             visibility: visible;
         }
-
         .portfolio-content {
             opacity: 1;
             visibility: visible;
@@ -139,41 +121,33 @@
         height: 250px;
         background-color: #ddd;
     }
-
     .portfolio-content {
         padding: 40px 40px;
         box-shadow: 0px 8px 16px 0px rgba(60, 110, 203, 0.1);
         background-color: $white;
-
         @include respond-between(lg, xl) {
             padding: 30px 25px;
         }
-
         @include respond-below(sm) {
             padding: 30px;
         }
-
         .category {
             font-size: 14px;
-            font-weight: 700;
+            font-weight: 500;
             text-transform: uppercase;
             color: $primary-color;
             letter-spacing: 2px;
             padding-bottom: 5px;
         }
-
         .title {
             font-size: 24px;
             margin-bottom: 15px;
-
             @include respond-between(lg, xl) {
                 size-size: 22px;
             }
-
             @include respond-below(sm) {
                 font-size: 20px;
             }
-
             a {
                 color: $secondary-color;
             }
@@ -181,18 +155,15 @@
     }
 }
 
-
 .portfolio-item-three {
     position: relative;
     overflow: hidden;
     z-index: 1;
-
     img {
         width: 100%;
         transform: scale(1) rotate(0deg);
         @include transition(0.3s);
     }
-
     &::before {
         content: "";
         position: absolute;
@@ -205,7 +176,6 @@
         opacity: 0.4;
         @include transition(0.3s);
     }
-
     .post-content {
         position: absolute;
         left: 40px;
@@ -215,44 +185,35 @@
         @include transition(0.3s);
         max-height: 95px;
         overflow: hidden;
-
-
         @include respond-between(lg, xl) {
             left: 25px;
             bottom: 30px;
             right: 25px;
         }
-
         @include respond-below(sm) {
             left: 25px;
             bottom: 30px;
             right: 25px;
         }
-
         .cat {
-            font-weight: 700;
+            font-weight: 500;
             color: $white;
             font-size: 14px;
         }
-
         .title {
             font-size: 24px;
             padding-top: 10px;
-
             @include respond-between(lg, xl) {
                 font-size: 20px;
             }
-
             @include respond-below(sm) {
                 font-size: 20px;
             }
-
             a {
                 color: $white;
             }
         }
     }
-
     .portfolio-link {
         color: $white;
         font-size: 30px;
@@ -264,30 +225,24 @@
         opacity: 0;
         visibility: hidden;
         z-index: 4;
-
         @include respond-between(lg, xl) {
             left: 25px;
         }
-
         @include respond-below(sm) {
             left: 25px;
         }
     }
-
     &:hover {
         img {
             transform: scale(1.2) rotate(5deg);
         }
-
         .post-content {
-            bottom: calc( 100% - 130px );
+            bottom: calc( 100% - 130px);
         }
-
         &::before {
             opacity: 0.9;
             background-color: $primary-color;
         }
-
         .portfolio-link {
             bottom: 40px;
             visibility: visible;
@@ -296,11 +251,9 @@
     }
 }
 
-
 .portfolio-arrow,
 .portfolio-arrow-two {
     text-align: right;
-
     .slick-arrow {
         height: 60px;
         width: 60px;
@@ -311,7 +264,6 @@
         color: $white;
         border: 2px solid $primary-color;
         cursor: pointer;
-
         &.next {
             background-color: $white;
             color: $primary-color;
@@ -325,7 +277,6 @@
     .slick-arrow {
         border-color: #ededed;
         color: $primary-color;
-
         &.next {
             background-color: $primary-color;
             color: $white;
@@ -350,11 +301,9 @@
         cursor: pointer;
         transition: all 0.3s ease-out 0s;
         color: $primary-color;
-
         &.prev {
             left: -70px;
         }
-
         &.next {
             right: -70px;
         }
@@ -370,13 +319,14 @@
     }
 }
 
+
 /*======= Portfolio Details =======*/
+
 .case-details-area {
     .case-details-thumb {
         position: relative;
         z-index: 1;
     }
-
     .case-live {
         box-shadow: 0px 8px 16px 0px rgba(0, 26, 55, 0.3);
         position: absolute;
@@ -384,36 +334,29 @@
         top: 20px;
         right: 20px;
         padding: 45px 0px 45px 40px;
-
         @include respond-below(md) {
             left: 0;
             top: 0px;
             position: unset;
         }
-
         .case-live-item-area {
             @include respond-below(sm) {
                 margin: 0;
             }
-
             .case-live-item {
                 padding-left: 30px;
                 padding-right: 40px;
                 position: relative;
-
                 @include respond-below(sm) {
                     padding-bottom: 20px;
                 }
-
                 .title {
                     font-size: 20px;
                 }
-
                 span {
                     font-size: 14px;
                     color: $text-color-2;
                 }
-
                 i {
                     position: absolute;
                     top: 2px;
@@ -428,32 +371,26 @@
             margin-top: 37px;
         }
     }
-
     .case-details-content {
         .case-details-case {
             position: relative;
-
             img {
                 position: absolute;
                 left: 0;
                 top: 5px;
-
                 @include respond-below(md) {
                     position: unset;
                     margin-bottom: 20px;
                 }
             }
-
             p {
                 padding-left: 265px;
-
                 @include respond-below(md) {
                     padding-left: 0;
                 }
             }
         }
     }
-
     .case-content-2 {
         .title {
             font-size: 24px;
@@ -461,7 +398,6 @@
             padding-bottom: 14px;
         }
     }
-
     .case-video-thumb {
         position: relative;
         a {
@@ -477,13 +413,11 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
             @include respond-below(md) {
                 height: 80px;
                 width: 80px;
                 line-height: 80px;
             }
-
             &::before {
                 position: absolute;
                 content: "";
@@ -496,7 +430,6 @@
                 z-index: -1;
                 @include animation(pulseBtnBefore 1.8s linear infinite);
             }
-
             &::after {
                 position: absolute;
                 content: "";
@@ -511,18 +444,16 @@
             }
         }
     }
-
     .case-next-prev {
         position: relative;
         .case-prev {
             span {
-                font-weight: 700;
+                font-weight: 500;
                 font-size: 14px;
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 color: $text-color-3;
             }
-
             .title {
                 font-size: 28px;
                 @include respond-below(md) {
@@ -532,17 +463,14 @@
         }
         .case-next {
             span {
-                font-weight: 700;
+                font-weight: 500;
                 font-size: 14px;
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 color: $text-color-3;
             }
-
             .title {
                 font-size: 28px;
-
-
                 @include respond-below(md) {
                     font-size: 20px;
                 }
