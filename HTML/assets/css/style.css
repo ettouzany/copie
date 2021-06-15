@@ -7157,8 +7157,8 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
   position: relative;
   z-index: 1;
   text-align: center;
-  padding-top: 280px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 90px;
 }
 @media (max-width: 575px) {
   .page-title-area {
