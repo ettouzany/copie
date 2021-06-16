@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
-	Template Name: Omnivus - IT Solutions & Digital Services HTML5 Template
-	Template URI: https://webtend.net/demo/html/omnivus/
+	Template Name: FOS-Agri - La Fondation pour la Promotion des Œuvres Sociales du Personnel du Ministère de l'Agriculture et de la Pêche Maritime -Département de l'Agriculture-
+	Template URI: https://webtend.net/demo/html/FOS-Agri/
 	Author: WebTend
 	Author URI:  https://webtend.net/
 	Version: 1.0
