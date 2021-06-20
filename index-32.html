@@ -578,41 +578,9 @@
     <!--====== Back to top start ======-->
 
     <!--====== Footer PART START ======-->
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row footer-widgets">
-                <div class="col-lg-6 col-md-6 col-md-7">
-                    <div class="widget about-widget">
-                        <div class="logo">
-                            <img src="assets/img/logo.svg" alt="">
-                        </div>
-                        <p>La Fondation pour la Promotion des Œuvres Sociales du Personnel du Ministère de l'Agriculture et de la Pêche Maritime -Département de l’Agriculture-
+    <div class="footer">
 
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-1 col-md-6 offset-xl-1">
-
-                </div>
-                <div class="col-lg-4 col-md-6 col-md-6">
-                    <div class="widget contact-widget">
-                        <h4 class="widget-title">Contactez-nous
-                        </h4>
-                        <ul>
-                            <li><i class="fa fa-phone"></i> 0537665540</li>
-                            <li><i class="fa fa-fax"></i> 0537698431</li>
-                            <li><i class="fa fa-globe"></i> 461, Avenue Hassan II, Agdal-Rabat</li>
-                            <li><i class="fa fa-envelope"></i> <a href="#"> fos-agri@agriculture.gov.ma</a></li>
-                        </ul>
-                        <a href="#"><i class="fal fa-angle-right"></i>Voir plus d'information...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <p>Copyright © <a href="#">FOS-Agri</a> - 2021</p>
-            </div>
-        </div>
-    </footer>
+    </div>
     <!--====== Footer PART ENDS ======-->
 
     <!--====== Jquery ======-->
@@ -637,6 +605,10 @@
     <script src="assets/js/wow.min.js"></script>
     <!--====== Main JS ======-->
     <script src="assets/js/main.js"></script>
+    <script>
+        $(".top-menu").load("/assets/menu.html");
+        $(".footer").load("/assets/footer.html");
+    </script>
 </body>
 
 </html>
